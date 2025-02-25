@@ -5,6 +5,7 @@ import br.com.alurafood.pagamentos.service.PagamentoService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -56,6 +57,5 @@ public class PagamentoController {
 		service.deletarPagamento(id);
 		return ResponseEntity.noContent().build();
 	}
-
 
 }
